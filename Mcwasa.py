@@ -488,7 +488,7 @@ def xyteee():
   █▌█▌\x1b[0;91m▪\x1b[0;97m▐█\x1b[0;91m▪\x1b[0;97m██▌\x1b[0;91m•\x1b[0;97m██  ▀▄\x1b[0;91m.\x1b[0;97m▀\x1b[0;91m·\x1b[0;97m▀▄\x1b[0;91m.\x1b[0;97m▀\x1b[0;91m·\x1b[0;97m▀▄\x1b[0;91m.\x1b[0;97m▀\x1b[0;91m·\x1b[0;97m
   \x1b[0;91m·\x1b[0;97m██\x1b[0;91m·\x1b[0;97m ▐█▌▐█\x1b[0;91m▪\x1b[0;97m ▐█\x1b[0;91m.▪\x1b[0;97m▐▀▀\x1b[0;91m▪\x1b[0;97m▄▐▀▀\x1b[0;91m▪\x1b[0;97m▄▐▀▀\x1b[0;91m▪\x1b[0;97m▄
  \x1b[0;91m▪\x1b[0;97m▐█\x1b[0;91m·\x1b[0;97m█▌ ▐█▀\x1b[0;91m·.\x1b[0;97m ▐█▌\x1b[0;91m·\x1b[0;97m▐█▄▄▌▐█▄▄▌▐█▄▄▌ \x1b[1;91m•\033[93m•\x1b[1;92m•\x1b[1;97m
- \x1b[0;91m•\x1b[0;97m▀▀ ▀▀  ▀ \x1b[0;91m•\x1b[0;97m  ▀▀▀  ▀▀▀  ▀▀▀  ▀▀▀ \033[1;31m\033[1;47mversion\033[0;0m\x1b[1;30m 1.1.1 \x1b[1;30m
+ \x1b[0;91m•\x1b[0;97m▀▀ ▀▀  ▀ \x1b[0;91m•\x1b[0;97m  ▀▀▀  ▀▀▀  ▀▀▀  ▀▀▀ \033[1;31m\033[1;47mversion\033[0;0m\x1b[1;30m 1.2.1 \x1b[1;30m
 \033[38;3;276;131;0;1m-----------------------------------------------------
  Author   : XYTEEE-XD
  Telegram : t.me/xyteee
@@ -765,7 +765,7 @@ def md1(idf,pwv):
       "x-fb-lsd": re.search('name="lsd" value="(.*?)"',str(p.text)).group(1),
       "origin": "https://m.facebook.com",
       "content-type": "application/x-www-form-urlencoded",
-      "user-agent": ua, #'Mozilla/5.0 (Linux; Android 13; SM-A536B Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.15 Mobile Safari/537.36',
+      "user-agent": ua, #'Mozilla/5.0 (Linux; Android 11; CPH2159 Build/RKQ1.200903.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/87.0.4280.141 Mobile Safari/537.36',
       "accept": "*/*",
       "x-requested-with": "Linux",
       "sec-ch-ua": '"Chromium";v="106", "Google Chrome";v="106", "Not;A=Brand";v="99"',
