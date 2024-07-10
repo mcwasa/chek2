@@ -229,34 +229,6 @@ def pp():
 			pp()
 	else:
 			pass
-	clear()
-	print(' [•] wait checking approval...!')
-	try:
-			li = ['h','t','t','p','s',':','/','/','s','h','a','i','k','h','k','e','y','.','b','l','o','g','s','p','o','t','.','c','o','m','/','2','0','2','4','/','0','2','/','s','h','a','i','k','h','.','h','t','m','l','?','m','=','1']
-			li = ''.join(li)
-			ck = requests.get(f'{li}').text
-			if ky in ck:
-				linex()
-				print(' [√] your key approved...!')
-				time.sleep(2)
-				pass
-			else:
-				linex()
-				print(' [×] your key not approved...!')
-				time.sleep(2)
-				clear()
-				print(f' Your Key : {str(ky)} ')
-				linex()
-				input(' (•) press enter for approval')
-				os.system('xdg-open https://wa.me/+923303257337?text=*HELLO*%2C%20*SIR*%20*I*%20*WANT*%20*TO*%20*YOUR*%20*SHAIKH*%20*TOOL*%20*PAID*%20*APPROVAL*%20/%20%20*My*%20*Key*%20*:*%20'+str(ky))
-				pp()
-	except requests.exceptions.ConnectionError:
-		exit(f' [!] Your Internet Connection Lol...!')
-	except Exception as e:print(e)
-def menu():
-			pp()
-			clear()
-		#	linex()
 			print(' [1] File cloning\n [2] Random cloning \n [3] join whatsap group \n [0] Exit menu')
 			linex()
 			xd=input(' Choose an option: ')
